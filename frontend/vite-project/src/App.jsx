@@ -16,7 +16,7 @@ const App = () => {
 
     setLoading(true);
     try {
-      const response = await axios.post('http://127.0.0.1:5001/predict', { message });
+      const response = await axios.post('https://email-spam-ze4a.onrender.com/predict', { message });
       setResult(response.data.prediction);
       setError(null);
     } catch (err) {
